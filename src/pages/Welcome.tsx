@@ -41,11 +41,23 @@ const Welcome = () => {
 
   return (
     <PageTransition>
-      <div className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      <div className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-purple-900 to-pink-900">
         <FloatingHearts />
         <Sparkles />
-        
+
+        {/* Decorative top layer: balloons and cake */}
+        <div className="absolute top-10 left-1/4 animate-float">
+          <motion.div animate={{ y: [0, -20, 0] }} transition={{ duration: 3, repeat: Infinity }} className="text-6xl">🎈</motion.div>
+        </div>
+        <div className="absolute top-10 left-1/2 transform -translate-x-1/2 animate-float">
+          <motion.div animate={{ y: [0, -20, 0] }} transition={{ duration: 3, repeat: Infinity, delay: 0.5 }} className="text-6xl">🎂</motion.div>
+        </div>
+        <div className="absolute top-10 right-1/4 animate-float">
+          <motion.div animate={{ y: [0, -20, 0] }} transition={{ duration: 3, repeat: Infinity, delay: 0.2 }} className="text-6xl">🎈</motion.div>
+        </div>
+
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+          {/* Sparkle icon */}
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
@@ -55,6 +67,7 @@ const Welcome = () => {
             <SparklesIcon className="w-20 h-20 mx-auto text-gold animate-sparkle" />
           </motion.div>
 
+          {/* Main Heading */}
           <motion.h1
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -64,6 +77,7 @@ const Welcome = () => {
             🎉 Happy Birthday to the Most Amazing Bestie Ever! 🎉
           </motion.h1>
 
+          {/* Subtext */}
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -73,6 +87,7 @@ const Welcome = () => {
             A special surprise made just for you, with love and memories you'll never forget 💖
           </motion.p>
 
+          {/* Next Button */}
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -87,35 +102,6 @@ const Welcome = () => {
               Next <Gift className="ml-2 h-5 w-5" />
             </Button>
           </motion.div>
-
-          {/* Decorative balloons */}
-          <div className="absolute top-10 left-10 animate-float">
-            <motion.div
-              animate={{ y: [0, -20, 0] }}
-              transition={{ duration: 3, repeat: Infinity }}
-              className="text-6xl"
-            >
-              🎈
-            </motion.div>
-          </div>
-          <div className="absolute top-20 right-10 animate-float" style={{ animationDelay: "1s" }}>
-            <motion.div
-              animate={{ y: [0, -20, 0] }}
-              transition={{ duration: 3, repeat: Infinity, delay: 1 }}
-              className="text-6xl"
-            >
-              🎈
-            </motion.div>
-          </div>
-          <div className="absolute bottom-20 left-20 animate-float" style={{ animationDelay: "0.5s" }}>
-            <motion.div
-              animate={{ y: [0, -20, 0] }}
-              transition={{ duration: 3, repeat: Infinity, delay: 0.5 }}
-              className="text-6xl"
-            >
-              🎂
-            </motion.div>
-          </div>
         </div>
       </div>
     </PageTransition>
