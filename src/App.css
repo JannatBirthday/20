@@ -40,3 +40,73 @@
 .read-the-docs {
   color: #888;
 }
+
+/* ===================== Main Text Enhancements ===================== */
+
+/* Bright and glowing text for all headings and paragraphs */
+h1, h2, h3, h4, h5, h6, p, span {
+  color: #fff !important; /* bright white */
+  text-shadow: 0 0 10px rgba(255, 182, 193, 0.8),
+               0 0 20px rgba(255, 105, 180, 0.4);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin: 1rem 0;
+}
+
+/* Gradient text for main titles like "Happy Birthday" */
+.gradient-text {
+  background: linear-gradient(90deg, #ff7ee2, #ffd6ff, #ffc3a0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  font-size: 3rem;
+  text-shadow: 0 0 25px rgba(255, 192, 203, 0.8);
+}
+
+/* Glowing effect animation for "Make a Wish" or similar */
+@keyframes glow {
+  0%, 100% { text-shadow: 0 0 20px #ffb6f0, 0 0 40px #ff7ee2; }
+  50% { text-shadow: 0 0 35px #ff7ee2, 0 0 60px #ffb6f0; }
+}
+.glow {
+  color: #fff;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Ensure cards and root container don't blur text */
+#root, .card {
+  backdrop-filter: none !important;
+  background: transparent !important;
+  box-shadow: none;
+}
+
+/* Background for strong contrast with pastel texts */
+body {
+  background-color: #1a001f; /* deep purple/black */
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+/* Buttons or navigation */
+button, .next-btn {
+  background: linear-gradient(90deg, #ff7ee2, #ffc3a0);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.75em 2em;
+  border: none;
+  border-radius: 2em;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
+  transition: all 0.3s ease;
+}
+button:hover, .next-btn:hover {
+  box-shadow: 0 0 30px rgba(255, 182, 193, 0.7);
+  transform: translateY(-2px);
+}
+
+/* Optional: small paragraph tweaks */
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #fff;
+}
