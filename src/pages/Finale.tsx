@@ -44,9 +44,10 @@ const Finale = () => {
             className="mb-12"
           >
             <p className="text-xl md:text-2xl handwritten leading-relaxed max-w-3xl mx-auto text-foreground/90">
-              No matter how far life takes us, you'll always have a special place in my heart. 
-              You've made my world brighter just by being in it. This isn't just a wish — 
-              it's a promise that our bond will always shine. ✨
+              PYARI JANNAT🌸💐 HAPPY BRDAY ONCE AGAIN, I KNW DUSRA DIN CHADH GYA PAR KYA HI KRU BTATI TU HAI NHI😭
+              KHAIR I WISH TERI YE SAAL BOHT HI ACHHA JAYE TU KHUSH HO TU KAMYAAB HO TUJHE BOHT TARAKKI MILE AUR 
+              I HOPE HAM DONO BHI AISE HI BESTF BANKE RAHE AAGE BHI💐🌸 ANYWAYS MAI HMESHA TERE SATH RHUNGA NO MATTER
+              WHAT HAPPENS OK?😚🏵 KABHI BHI KHUDKO AKELA MT SAMJHNA KIUKI I'M ALWAYS HERE!! AND, DHYAN RAKHA KARO APNA🌸❤️
             </p>
           </motion.div>
 
