@@ -74,7 +74,7 @@ const Welcome = () => {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="text-5xl md:text-7xl font-pacifico mb-6 text-gradient-magical glow-text"
           >
-            🎉 Happy Birthday to the Most Amazing Bestie Ever! 🎉
+            🎉 Happy Birthday to the Most Amaazinggg Bestiee ever🥹❤️ 🎉
           </motion.h1>
 
           {/* Subtext */}
@@ -84,7 +84,7 @@ const Welcome = () => {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="text-xl md:text-2xl mb-8 text-muted-foreground handwritten max-w-2xl mx-auto"
           >
-            A special surprise made just for you, with love and memories you'll never forget 💖
+            Jyada khaas nhi bas next next karti jao sundar pari😭🌸💖
           </motion.p>
 
           {/* Next Button */}
