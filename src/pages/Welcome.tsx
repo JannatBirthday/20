@@ -67,18 +67,18 @@ const Welcome = () => {
             <SparklesIcon className="w-20 h-20 mx-auto text-gold animate-sparkle" />
           </motion.div>
 
-          {/* Main Heading with emoji fix */}
+          {/* Main Heading */}
           <motion.h1
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="text-5xl md:text-7xl font-pacifico mb-6 glow-text"
+            className="text-5xl md:text-7xl font-pacifico mb-6"
           >
-            <span className="text-white">🎉</span>{" "}
+            <span className="inline text-5xl md:text-7xl">🎉</span>{" "}
             <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-yellow-400 bg-clip-text text-transparent">
               Happy Birthday to the Most Amaazinggg Bestiee ever
             </span>{" "}
-            <span className="text-white">🥹❤️ 🎉</span>
+            <span className="inline text-5xl md:text-7xl">🥹❤️ 🎉</span>
           </motion.h1>
 
           {/* Subtext */}
@@ -86,9 +86,10 @@ const Welcome = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="text-xl md:text-2xl mb-8 text-muted-foreground handwritten max-w-2xl mx-auto"
+            className="text-xl md:text-2xl mb-8 handwritten max-w-2xl mx-auto"
           >
-            Jyada khaas nhi bas next next karti jao sundar pari😭🌸💖
+            Jyada khaas nhi bas next next karti jao sundar pari{" "}
+            <span className="inline">😭🌸💖</span>
           </motion.p>
 
           {/* Next Button */}
