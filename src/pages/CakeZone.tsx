@@ -62,7 +62,8 @@ const CakeZone = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-6xl font-pacifico mb-8 text-gradient-magical glow-text"
           >
-            Make a Wish! 🎂
+            Chal ab wish soch ek dimag mein🌸❤️
+            Jaldiii😼
           </motion.h1>
 
           <motion.div
@@ -164,7 +165,7 @@ const CakeZone = () => {
             transition={{ delay: 0.5 }}
             className="text-xl md:text-2xl mb-8 handwritten"
           >
-            Make a wish, bestie 💫 — because today, the universe celebrates YOU!
+            Jaldiii se apni wish sochle aur blow candle pe click krde🥹🌸❤️😚
           </motion.p>
 
           <motion.div
@@ -204,7 +205,7 @@ const CakeZone = () => {
               animate={{ opacity: 1, y: 0 }}
               className="text-2xl mt-8 handwritten text-primary"
             >
-              ✨ Your wish is on its way to the stars! ✨
+              💐🌸TERI WISH JARUR PURI HOGIIIII!!🥳🪅🎊
             </motion.p>
           )}
         </div>
