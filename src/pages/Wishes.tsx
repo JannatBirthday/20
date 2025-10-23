@@ -11,9 +11,9 @@ const Wishes = () => {
   const [currentWish, setCurrentWish] = useState(0);
 
   const wishes = [
-    "I hope your day is as bright as your smile and as special as your soul. ✨",
-    "You deserve the world, my bestie — every joy, every success, every reason to smile. 🌟",
-    "Thank you for being my sunshine, my therapist, my partner in chaos, and my forever person. 💖",
+    "Allah kre tera ye saal teri smile ki tarah sundar jaye🥹🏵❤️✨",
+    "Meri pyari bestieeee You deserve alottt.. Sad na hua kr chhoti chhoti baato pe🌟",
+    "Thank you for beingg my bestf anddd I will be always here for you no mattee what🌸💖",
   ];
 
   useEffect(() => {
