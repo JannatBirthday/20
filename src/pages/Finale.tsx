@@ -11,10 +11,10 @@ const Finale = () => {
 
   return (
     <PageTransition>
-      <div className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      <div className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-purple-900 to-pink-900">
         <Sparkles />
         <FloatingHearts />
-        
+
         <div className="max-w-5xl mx-auto px-4 text-center relative z-10">
           <motion.div
             initial={{ scale: 0 }}
@@ -31,7 +31,7 @@ const Finale = () => {
                 ]
               }}
               transition={{ duration: 2, repeat: Infinity }}
-              className="text-5xl md:text-7xl font-pacifico text-gradient-magical mb-6"
+              className="text-5xl md:text-7xl font-pacifico text-white mb-6"
             >
               YOU'LL ALWAYS BE MY FAVOURITE BESTIE 😘❤️
             </motion.h1>
@@ -43,7 +43,7 @@ const Finale = () => {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="mb-12"
           >
-            <p className="text-xl md:text-2xl handwritten leading-relaxed max-w-3xl mx-auto text-foreground/90">
+            <p className="text-xl md:text-2xl handwritten leading-relaxed max-w-3xl mx-auto text-white">
               PYARI JANNAT🌸💐 HAPPY BRDAY ONCE AGAIN, I KNW DUSRA DIN CHADH GYA PAR KYA HI KRU BTATI TU HAI NHI😭
               KHAIR I WISH TERI YE SAAL BOHT HI ACHHA JAYE TU KHUSH HO TU KAMYAAB HO TUJHE BOHT TARAKKI MILE AUR 
               I HOPE HAM DONO BHI AISE HI BESTF BANKE RAHE AAGE BHI💐🌸 ANYWAYS MAI HMESHA TERE SATH RHUNGA NO MATTER
@@ -54,26 +54,18 @@ const Finale = () => {
           {/* Decorative butterflies */}
           <div className="absolute top-4 left-4 animate-float pointer-events-none" style={{ zIndex: 1 }}>
             <motion.div
-              animate={{ 
-                x: [0, 20, 0],
-                y: [0, -20, 0],
-                rotate: [0, 10, 0]
-              }}
+              animate={{ x: [0, 20, 0], y: [0, -20, 0], rotate: [0, 10, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="text-4xl emoji-clear"
+              className="text-4xl"
             >
               🦋
             </motion.div>
           </div>
-          <div className="absolute top-4 right-4 animate-float pointer-events-none" style={{ animationDelay: "1s", zIndex: 1 }}>
+          <div className="absolute top-4 right-4 animate-float pointer-events-none" style={{ zIndex: 1 }}>
             <motion.div
-              animate={{ 
-                x: [0, -20, 0],
-                y: [0, -20, 0],
-                rotate: [0, -10, 0]
-              }}
+              animate={{ x: [0, -20, 0], y: [0, -20, 0], rotate: [0, -10, 0] }}
               transition={{ duration: 4, repeat: Infinity, delay: 1, ease: "easeInOut" }}
-              className="text-4xl emoji-clear"
+              className="text-4xl"
             >
               🦋
             </motion.div>
@@ -95,18 +87,13 @@ const Finale = () => {
             </Button>
 
             <motion.div
-              animate={{ 
-                scale: [1, 1.05, 1],
-              }}
+              animate={{ scale: [1, 1.05, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
             >
-              <p className="text-lg handwritten text-muted-foreground">
-                Made with love by <span className="text-primary font-semibold">Ansh</span> 💕
+              <p className="text-lg handwritten text-white">
+                Made with love by <span className="text-pink-400 font-semibold">Ansh</span> 💕
                 <motion.span
-                  animate={{ 
-                    rotate: [0, 20, -20, 0],
-                    scale: [1, 1.2, 1]
-                  }}
+                  animate={{ rotate: [0, 20, -20, 0], scale: [1, 1.2, 1] }}
                   transition={{ duration: 1, repeat: Infinity, repeatDelay: 2 }}
                   className="inline-block ml-2"
                 >
@@ -123,7 +110,7 @@ const Finale = () => {
             transition={{ delay: 1.8 }}
             className="mt-16 max-w-2xl mx-auto"
           >
-            <p className="text-lg handwritten text-muted-foreground italic border-l-4 border-primary pl-4">
+            <p className="text-lg handwritten text-white italic border-l-4 border-pink-400 pl-4">
               "Best friends are like stars — even if you can't always see them, you know they're always there." ⭐
             </p>
           </motion.div>
