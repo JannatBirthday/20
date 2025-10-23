@@ -74,11 +74,11 @@ const Welcome = () => {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="text-5xl md:text-7xl font-pacifico mb-6"
           >
-            <span className="inline text-5xl md:text-7xl">🎉</span>{" "}
-            <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-yellow-400 bg-clip-text text-transparent">
+            <span>🎉 </span>
+            <span className="text-white">
               Happy Birthday to the Most Amaazinggg Bestiee ever
-            </span>{" "}
-            <span className="inline text-5xl md:text-7xl">🥹❤️ 🎉</span>
+            </span>
+            <span> 🥹❤️ 🎉</span>
           </motion.h1>
 
           {/* Subtext */}
@@ -86,10 +86,9 @@ const Welcome = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="text-xl md:text-2xl mb-8 handwritten max-w-2xl mx-auto"
+            className="text-xl md:text-2xl mb-8 text-white handwritten max-w-2xl mx-auto"
           >
-            Jyada khaas nhi bas next next karti jao sundar pari{" "}
-            <span className="inline">😭🌸💖</span>
+            Jyada khaas nhi bas next next karti jao sundar pari😭🌸💖
           </motion.p>
 
           {/* Next Button */}
