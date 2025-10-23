@@ -4,18 +4,19 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import FloatingHearts from "@/components/FloatingHearts";
 import PageTransition from "@/components/PageTransition";
+import memory1 from "@/assets/memories/memory1.jpg";
+import memory2 from "@/assets/memories/memory2.jpg";
+import memory3 from "@/assets/memories/memory3.jpg";
+import memory4 from "@/assets/memories/memory4.jpg";
 
 const Memories = () => {
   const navigate = useNavigate();
 
-  // Placeholder photos - you can replace these with actual images
   const photos = [
-    { id: 1, placeholder: "📸 Memory 1" },
-    { id: 2, placeholder: "📸 Memory 2" },
-    { id: 3, placeholder: "📸 Memory 3" },
-    { id: 4, placeholder: "📸 Memory 4" },
-    { id: 5, placeholder: "📸 Memory 5" },
-    { id: 6, placeholder: "📸 Memory 6" },
+    { id: 1, src: memory1, alt: "Our fun chat memories" },
+    { id: 2, src: memory2, alt: "Late night conversations" },
+    { id: 3, src: memory3, alt: "Python talks and laughs" },
+    { id: 4, src: memory4, alt: "When we first met" },
   ];
 
   return (
@@ -59,15 +60,12 @@ const Memories = () => {
                 whileHover={{ scale: 1.05, rotate: 2 }}
                 className="relative group"
               >
-                <div className="aspect-square bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl border-4 border-white shadow-xl flex items-center justify-center text-4xl overflow-hidden">
-                  {photo.placeholder}
-                  {/* Replace with actual images:
+                <div className="aspect-square rounded-2xl border-4 border-white shadow-xl overflow-hidden">
                   <img 
-                    src="/path/to/image.jpg" 
-                    alt="Memory"
+                    src={photo.src} 
+                    alt={photo.alt}
                     className="w-full h-full object-cover"
                   />
-                  */}
                 </div>
                 <motion.div
                   className="absolute inset-0 pointer-events-none"
