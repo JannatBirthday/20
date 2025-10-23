@@ -12,7 +12,6 @@ const Welcome = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Fire confetti on page load
     const duration = 3000;
     const end = Date.now() + duration;
 
@@ -41,11 +40,11 @@ const Welcome = () => {
 
   return (
     <PageTransition>
-      <div className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-purple-900 to-pink-900">
+      <div className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-purple-800 via-pink-700 to-purple-900">
         <FloatingHearts />
         <Sparkles />
 
-        {/* Decorative top layer: balloons and cake */}
+        {/* Floating emojis */}
         <div className="absolute top-4 left-4 md:left-1/4 animate-float pointer-events-none" style={{ zIndex: 1 }}>
           <motion.div animate={{ y: [0, -20, 0] }} transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }} className="text-6xl emoji-clear">🎈</motion.div>
         </div>
@@ -57,14 +56,14 @@ const Welcome = () => {
         </div>
 
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          {/* Sparkle icon */}
+          {/* Sparkle Icon */}
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.8, type: "spring", bounce: 0.5 }}
             className="mb-8"
           >
-            <SparklesIcon className="w-20 h-20 mx-auto text-gold animate-sparkle" />
+            <SparklesIcon className="w-20 h-20 mx-auto text-yellow-400 animate-sparkle" />
           </motion.div>
 
           {/* Main Heading */}
@@ -72,7 +71,13 @@ const Welcome = () => {
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="text-5xl md:text-7xl font-pacifico mb-6 text-gradient-magical glow-text"
+            className="text-5xl md:text-7xl font-pacifico mb-6"
+            style={{
+              backgroundImage: 'linear-gradient(90deg, #FF69B4, #BA55D3, #87CEEB, #FFD700)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              textShadow: '0 0 10px rgba(255,255,255,0.5)', // soft glow
+            }}
           >
             🎉 Happy Birthday to the Most Amaazinggg Bestiee ever🥹❤️ 🎉
           </motion.h1>
@@ -82,7 +87,11 @@ const Welcome = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="text-xl md:text-2xl mb-8 text-muted-foreground handwritten max-w-2xl mx-auto"
+            className="text-xl md:text-2xl mb-8 handwritten max-w-2xl mx-auto"
+            style={{
+              color: '#FFE4F7', // pastel pink
+              textShadow: '0 0 5px rgba(255,255,255,0.3)', // subtle glow
+            }}
           >
             Jyada khaas nhi bas next next karti jao sundar pari😭🌸💖
           </motion.p>
@@ -97,7 +106,7 @@ const Welcome = () => {
             <Button
               onClick={() => navigate("/memories")}
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all animate-float"
+              className="bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-400 text-white font-semibold text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-2xl transition-all animate-float"
             >
               Next <Gift className="ml-2 h-5 w-5" />
             </Button>
