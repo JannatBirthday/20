@@ -23,45 +23,30 @@ const Memories = () => {
 
   return (
     <PageTransition>
-      <div className="min-h-screen py-16 px-4 relative overflow-hidden bg-gradient-to-b from-purple-800 via-pink-700 to-purple-900">
+      <div className="min-h-screen py-16 px-4 relative overflow-hidden bg-gradient-to-b from-purple-900 to-pink-900">
         <FloatingHearts />
 
         <div className="max-w-6xl mx-auto relative z-10">
-          {/* Heading */}
           <motion.h1
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-6xl font-pacifico text-center mb-6"
-            style={{
-              backgroundImage: 'linear-gradient(90deg, #FF69B4, #BA55D3, #FFD700, #87CEEB)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              textShadow: '0 0 15px rgba(255,255,255,0.5)',
-            }}
+            className="text-4xl md:text-6xl font-pacifico text-center mb-6 text-white"
           >
-            Aur bhi achhi achhi chats hai par mauke par yahi mili🤣❤️
+            Aur bhi achhi achhi chats hai par mauke par yahi mili <span>🤣❤️</span>
           </motion.h1>
 
-          {/* Subtext */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
             className="mb-12 max-w-3xl mx-auto"
           >
-            <p
-              className="text-lg md:text-xl text-center handwritten leading-relaxed"
-              style={{
-                color: '#FFE4F7',
-                textShadow: '0 0 5px rgba(255,255,255,0.3)',
-              }}
-            >
-              Dekh 😭 , btw socha nhi tha merko firse telegram pe koi dost milegi itni pyari
-              tu toh pyar ke sath sath sundar bhi hai🏵😼😚
+            <p className="text-lg md:text-xl text-center handwritten leading-relaxed text-white">
+              Dekh <span>😭</span>, btw socha nhi tha merko firse telegram pe koi dost milegi itni pyari
+              tu toh pyar ke sath sath sundar bhi hai <span>🏵😼😚</span>
             </p>
           </motion.div>
 
-          {/* Photo Grid */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -103,7 +88,6 @@ const Memories = () => {
             ))}
           </motion.div>
 
-          {/* Next Button */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -113,14 +97,13 @@ const Memories = () => {
             <Button
               onClick={() => navigate("/wishes")}
               size="lg"
-              className="bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-400 text-white font-semibold text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-2xl transition-all"
+              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all"
             >
               Next <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </motion.div>
         </div>
 
-        {/* Fullscreen Image Modal */}
         {selectedImage && (
           <motion.div
             initial={{ opacity: 0 }}
