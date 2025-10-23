@@ -52,28 +52,28 @@ const Finale = () => {
           </motion.div>
 
           {/* Decorative butterflies */}
-          <div className="absolute top-10 left-10 animate-float">
+          <div className="absolute top-4 left-4 animate-float pointer-events-none" style={{ zIndex: 1 }}>
             <motion.div
               animate={{ 
                 x: [0, 20, 0],
                 y: [0, -20, 0],
                 rotate: [0, 10, 0]
               }}
-              transition={{ duration: 4, repeat: Infinity }}
-              className="text-4xl"
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              className="text-4xl emoji-clear"
             >
               🦋
             </motion.div>
           </div>
-          <div className="absolute top-20 right-10 animate-float" style={{ animationDelay: "1s" }}>
+          <div className="absolute top-4 right-4 animate-float pointer-events-none" style={{ animationDelay: "1s", zIndex: 1 }}>
             <motion.div
               animate={{ 
                 x: [0, -20, 0],
                 y: [0, -20, 0],
                 rotate: [0, -10, 0]
               }}
-              transition={{ duration: 4, repeat: Infinity, delay: 1 }}
-              className="text-4xl"
+              transition={{ duration: 4, repeat: Infinity, delay: 1, ease: "easeInOut" }}
+              className="text-4xl emoji-clear"
             >
               🦋
             </motion.div>

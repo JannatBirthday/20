@@ -29,7 +29,7 @@ const MusicPlayer = () => {
   }, []);
 
   return (
-    <div className="fixed top-4 right-4 z-50">
+    <div className="fixed bottom-4 right-4 z-50">
       <motion.div
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
@@ -37,12 +37,12 @@ const MusicPlayer = () => {
         <Button
           onClick={togglePlay}
           size="icon"
-          className="rounded-full bg-primary/80 backdrop-blur-sm hover:bg-primary shadow-lg"
+          className="rounded-full bg-background/90 backdrop-blur-sm hover:bg-background shadow-lg border-2 border-primary/30 transition-all duration-200"
         >
           {isPlaying ? (
-            <Volume2 className="h-5 w-5" />
+            <Volume2 className="h-4 w-4 text-primary" />
           ) : (
-            <VolumeX className="h-5 w-5" />
+            <VolumeX className="h-4 w-4 text-muted-foreground" />
           )}
         </Button>
       </motion.div>

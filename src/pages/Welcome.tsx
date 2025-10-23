@@ -46,14 +46,14 @@ const Welcome = () => {
         <Sparkles />
 
         {/* Decorative top layer: balloons and cake */}
-        <div className="absolute top-10 left-1/4 animate-float">
-          <motion.div animate={{ y: [0, -20, 0] }} transition={{ duration: 3, repeat: Infinity }} className="text-6xl">🎈</motion.div>
+        <div className="absolute top-4 left-4 md:left-1/4 animate-float pointer-events-none" style={{ zIndex: 1 }}>
+          <motion.div animate={{ y: [0, -20, 0] }} transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }} className="text-6xl emoji-clear">🎈</motion.div>
         </div>
-        <div className="absolute top-10 left-1/2 transform -translate-x-1/2 animate-float">
-          <motion.div animate={{ y: [0, -20, 0] }} transition={{ duration: 3, repeat: Infinity, delay: 0.5 }} className="text-6xl">🎂</motion.div>
+        <div className="absolute top-4 left-1/2 transform -translate-x-1/2 animate-float pointer-events-none" style={{ zIndex: 1 }}>
+          <motion.div animate={{ y: [0, -20, 0] }} transition={{ duration: 3, repeat: Infinity, delay: 0.5, ease: "easeInOut" }} className="text-6xl emoji-clear">🎂</motion.div>
         </div>
-        <div className="absolute top-10 right-1/4 animate-float">
-          <motion.div animate={{ y: [0, -20, 0] }} transition={{ duration: 3, repeat: Infinity, delay: 0.2 }} className="text-6xl">🎈</motion.div>
+        <div className="absolute top-4 right-4 md:right-1/4 animate-float pointer-events-none" style={{ zIndex: 1 }}>
+          <motion.div animate={{ y: [0, -20, 0] }} transition={{ duration: 3, repeat: Infinity, delay: 0.2, ease: "easeInOut" }} className="text-6xl emoji-clear">🎈</motion.div>
         </div>
 
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">

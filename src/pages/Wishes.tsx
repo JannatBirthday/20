@@ -93,25 +93,28 @@ const Wishes = () => {
             </Button>
           </motion.div>
 
-          {/* Floating hearts around */}
+          {/* Floating hearts around - moved to corners to avoid text overlap */}
           <motion.div
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
-            className="absolute top-20 left-10 text-4xl"
+            className="absolute top-4 left-4 text-4xl opacity-70 emoji-clear pointer-events-none"
+            style={{ zIndex: 1 }}
           >
             💖
           </motion.div>
           <motion.div
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 2, repeat: Infinity, delay: 0.5 }}
-            className="absolute top-32 right-10 text-4xl"
+            className="absolute top-4 right-4 text-4xl opacity-70 emoji-clear pointer-events-none"
+            style={{ zIndex: 1 }}
           >
             💗
           </motion.div>
           <motion.div
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 2, repeat: Infinity, delay: 1 }}
-            className="absolute bottom-32 left-20 text-4xl"
+            className="absolute bottom-4 left-4 text-4xl opacity-70 emoji-clear pointer-events-none"
+            style={{ zIndex: 1 }}
           >
             💝
           </motion.div>
