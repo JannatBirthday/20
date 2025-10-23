@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, X } from "lucide-react";
 import FloatingHearts from "@/components/FloatingHearts";
 import PageTransition from "@/components/PageTransition";
+import { useState } from "react";
 import memory1 from "@/assets/memories/memory1.jpg";
 import memory2 from "@/assets/memories/memory2.jpg";
 import memory3 from "@/assets/memories/memory3.jpg";
@@ -11,6 +12,7 @@ import memory4 from "@/assets/memories/memory4.jpg";
 
 const Memories = () => {
   const navigate = useNavigate();
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const photos = [
     { id: 1, src: memory1, alt: "🥹" },
@@ -58,7 +60,8 @@ const Memories = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.6 + index * 0.1 }}
                 whileHover={{ scale: 1.05, rotate: 2 }}
-                className="relative group"
+                className="relative group cursor-pointer"
+                onClick={() => setSelectedImage(photo.src)}
               >
                 <div className="aspect-square rounded-2xl border-4 border-white shadow-xl overflow-hidden">
                   <img 
@@ -100,6 +103,33 @@ const Memories = () => {
             </Button>
           </motion.div>
         </div>
+
+        {selectedImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+            onClick={() => setSelectedImage(null)}
+          >
+            <Button
+              variant="ghost"
+              size="icon"
+              className="absolute top-4 right-4 text-white hover:bg-white/20"
+              onClick={() => setSelectedImage(null)}
+            >
+              <X className="h-6 w-6" />
+            </Button>
+            <motion.img
+              initial={{ scale: 0.8 }}
+              animate={{ scale: 1 }}
+              src={selectedImage}
+              alt="Full size"
+              className="max-w-full max-h-full object-contain rounded-lg"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </motion.div>
+        )}
       </div>
     </PageTransition>
   );
