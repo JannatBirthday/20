@@ -13,10 +13,10 @@ const Memories = () => {
   const navigate = useNavigate();
 
   const photos = [
-    { id: 1, src: memory1, alt: "Our fun chat memories" },
-    { id: 2, src: memory2, alt: "Late night conversations" },
+    { id: 1, src: memory1, alt: "🥹" },
+    { id: 2, src: memory2, alt: "raat wale ullu hai ham😔" },
     { id: 3, src: memory3, alt: "Python talks and laughs" },
-    { id: 4, src: memory4, alt: "When we first met" },
+    { id: 4, src: memory4, alt: "Jab we met😭🌸" },
   ];
 
   return (
@@ -30,7 +30,7 @@ const Memories = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-6xl font-pacifico text-center mb-6 text-gradient-magical glow-text"
           >
-            Our Beautiful Memories 📸
+            Aur bhi achhi achhi chats hai par mauke par yahi mili🤣❤️
           </motion.h1>
 
           <motion.div
@@ -40,8 +40,8 @@ const Memories = () => {
             className="mb-12 max-w-3xl mx-auto"
           >
             <p className="text-lg md:text-xl text-center handwritten leading-relaxed">
-              Every memory with you shines brighter than any star. From all our laughs to late-night talks, 
-              you've been my constant source of joy. You're not just my bestie — you're a part of my heart forever 💕
+              Dekh 😭 , btw socha nhi tha merko firse telegram pe koi dost milegi itni pyari
+              tu toh pyar ke sath sath sundar bhi hai🏵😼😚
             </p>
           </motion.div>
 
